@@ -1,0 +1,10 @@
+version: "3"
+services:
+  nifi:
+    image: hidup/nifi:1.7.0
+    ports:
+      - 8080:8080
+    volumes:
+      - ./opt/nifi:/opt/nifi
+    environment:
+      TZ: "Europe/Madrid"
